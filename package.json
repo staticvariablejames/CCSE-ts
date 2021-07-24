@@ -1,0 +1,23 @@
+{
+  "name": "ccse-ts",
+  "version": "0.0.0",
+  "description": "Typings for CCSE",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staticvariablejames/CCSE-ts.git"
+  },
+  "keywords": [
+    "CCSE",
+    "typings"
+  ],
+  "author": "Static Variable James",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/staticvariablejames/CCSE-ts/issues"
+  },
+  "homepage": "https://github.com/staticvariablejames/CCSE-ts#readme"
+}
