@@ -1,9 +1,9 @@
 declare global {
     namespace Game {
         // Methods injected by CCSE
-        export let customLumpTooltip: Array<(str: string, phase: number) => String>
-        export let customOptionsMenu: Array<() => void>
-        export let customStatsMenu: Array<() => void>
+        export let customLumpTooltip: Array<(str: string, phase: number) => String>;
+        export let customOptionsMenu: Array<() => void>;
+        export let customStatsMenu: Array<() => void>;
     }
 
     namespace CCSE {
