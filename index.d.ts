@@ -13,9 +13,17 @@ declare global {
         export function AppendCollapsibleOptionsMenu(title: string, body: string | HTMLDivElement) : void;
         export function AppendStatsVersionNumber(modName: string, versionString: string) : void;
 
+        export function ConfirmGameVersion(
+            modName:string,
+            modVersion:string,
+            version: string|number
+        ) : boolean;
+
         export function ConfirmGameCCSEVersion(
-            modName:string, modVersion:string,
-            gameVersion: string|number, ccseVersion: string|number
+            modName:string,
+            modVersion:string,
+            gameVersion: string|number,
+            ccseVersion: string|number
         ) : boolean;
 
         namespace config {
