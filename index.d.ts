@@ -4,6 +4,15 @@ declare global {
         export let customLumpTooltip: Array<(str: string, phase: number) => String>;
         export let customOptionsMenu: Array<() => void>;
         export let customStatsMenu: Array<() => void>;
+
+        namespace customMinigame {
+            namespace Bank {
+                export let goodTooltip: undefined | ((id: number, str: string) => void)[];
+                export let buyGood: undefined | ((id: number, n: number) => void)[];
+                export let sellGood: undefined | ((id: number, n: number) => void)[];
+                export let tick: undefined | (() => void)[];
+            }
+        }
     }
 
     namespace CCSE {
@@ -12,6 +21,8 @@ declare global {
 
         export function AppendCollapsibleOptionsMenu(title: string, body: string | HTMLDivElement) : void;
         export function AppendStatsVersionNumber(modName: string, versionString: string) : void;
+
+        export function MinigameReplacer(func: (obj: Game.Object, scriptName: string) => void, objKey: string);
 
         export function ConfirmGameVersion(
             modName:string,
