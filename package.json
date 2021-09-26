@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/staticvariablejames/CCSE-ts/issues"
   },
-  "homepage": "https://github.com/staticvariablejames/CCSE-ts#readme"
+  "homepage": "https://github.com/staticvariablejames/CCSE-ts#readme",
+  "dependencies": {
+    "@types/cookieclicker": "^2.31.5"
+  }
 }
